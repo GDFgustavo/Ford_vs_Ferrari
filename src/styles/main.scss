@@ -1,5 +1,62 @@
-$bgColor: red;
+@use 'hero';
+@use 'variaveis';
+
+@font-face {
+    font-family: Amazon;
+    src: url('../../assets/fonts/Amazon\ Ember\ Medium.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Amazon;
+    src: url('../../assets/fonts/Amazon\ Ember\ Bold.ttf');
+    font-weight: 700;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color:  rgb(14, 11, 19);
+    font-family: Amazon, sans-serif;
+}
+
+.background {
+    left: 0px;
+    opacity: 1;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+
+    &__img {
+        width: 100vw;
+    }
+
+    &__overlay {
+        background-image: radial-gradient(farthest-side at 50% 23%, transparent, rgb(14, 11, 19));
+        position: absolute;
+        inset: 0;
+    }
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
 }
