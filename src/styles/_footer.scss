@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+.footer {
+    padding: 5.6vw;
+    padding-bottom: 0;
+    padding-top: 20px;
+    position: relative;
+    background-color:  rgba(14, 11, 19, 0.811);
+    
+    &__content {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__logo {
+        width: 64px;
+        max-width: 100%;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        &__item {
+            display: inline-block;
+            
+            a {
+                text-decoration: none;
+                padding: 8px 16px 16px;
+                display: block;
+            }
+        }
+    }
+}

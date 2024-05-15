@@ -1,6 +1,7 @@
-@use 'hero';
 @use 'variaveis';
+@use 'hero';
 @use 'details';
+@use 'footer';
 
 @font-face {
     font-family: Amazon;
@@ -21,7 +22,7 @@
 }
 
 body {
-    background-color:  rgb(14, 11, 19);
+    background-color: variaveis.$corDeFundoMobile;
     font-family: Amazon, sans-serif;
 }
 
