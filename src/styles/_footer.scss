@@ -1,9 +1,7 @@
 @use 'variaveis';
 
 .footer {
-    padding: 5.6vw;
-    padding-bottom: 0;
-    padding-top: 20px;
+    padding: 3vw;
     position: relative;
     background-color:  rgba(14, 11, 19, 0.811);
     
@@ -12,7 +10,6 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding-bottom: 20px;
     }
 
     &__logo {
