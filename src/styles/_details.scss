@@ -26,6 +26,10 @@
 
             p {
                 max-width: 55%;
+
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
             }
 
             img {

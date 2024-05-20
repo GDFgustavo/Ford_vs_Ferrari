@@ -2,17 +2,30 @@
 
 .hero {
     padding: 5.6vw;
-    padding-bottom: 2vw;
+    padding-bottom: 2.7vw;
     display: flex;
     justify-content: left;
     position: relative;
 
+    @media (max-width: 768px) {
+        padding-bottom: 10vw;
+    }
+
+    @media (max-width: 1024px) {
+        padding-bottom: 8vw;
+    }
+
     &__content {
         max-width: 600px;
 
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+
         &__branding {
-            max-width: 400px;
-            width: 24vw;
+            max-width: 341px;
+            min-width: 100px;
+            width: 35vw;
             margin: 0 auto;
         }
 
@@ -27,6 +40,10 @@
                 border-radius: 8px;
                 color: variaveis.$corTextoPrincipal;
                 background-color: variaveis.$corDeFundo;
+
+                @media (max-width: 768px) {
+                    padding: 8px;
+                }
             }
         }
 
@@ -51,6 +68,10 @@
             display: flex;
             margin-top: 64px;
 
+            @media (max-width: 768px) {
+                display: block;
+            }
+
             img {
                 width: 26px;
             }
@@ -60,6 +81,8 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 width: 100%;
+                max-width:200px;
+                min-width: 100px;
                 height: 100%;
                 padding: 24px;
                 border: 0;
@@ -80,6 +103,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media (max-width: 768px) {
+                    display: inline-block;
+                    margin-left: 0px;
+                    margin-right: 15px;
+                    margin-top: 16px;
+                }
 
                 &:hover &__tooltips {
                     opacity: 1;
